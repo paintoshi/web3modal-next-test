@@ -14,7 +14,7 @@ const NetworkButton = ({}) => {
   }, [chain, chains])
 
   return (
-    <button onClick={() => open({ view: 'Networks' })} disabled={!isConnected}>
+    <button onClick={() => open({ view: 'Networks' })} disabled={!isConnected} style={{width: '100%'}}>
       {isSupportedChain ? `Using ${chain?.name}` : 'Select Chain'}
     </button>
   )

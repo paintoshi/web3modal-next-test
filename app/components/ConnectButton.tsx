@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { useAccount, useConnect } from 'wagmi'
+import { useAccount } from 'wagmi'
 import { useWeb3Modal } from '@web3modal/wagmi/react'
 
 const ConnectButton: React.FC = ({}) => {
@@ -10,6 +10,7 @@ const ConnectButton: React.FC = ({}) => {
   return (
     <button
       onClick={() => open()}
+      style={{width: '100%'}}
     >
       {isConnected ? 'Connected' : 'Connect'}
     </button>
